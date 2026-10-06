@@ -1,0 +1,3 @@
+- insert:
+    - id: better-dsh-web-restart
+      name: '@local/better-dsh-web-restart'

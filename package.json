@@ -1,0 +1,27 @@
+{
+  "name": "@local/better-dsh-web-restart",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Top-right session-header button that restarts the DSH web service through the systemd self-heal recipe, with an online/offline status light beside it.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json"
+  ]
+}

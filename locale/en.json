@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Restart Button + Status Light",
+    "description": "Adds a restart button to the top-right session header (delayed kill + systemd self-heal recipe) with an online/offline status light: green online, red offline."
+  }
+}
